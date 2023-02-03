@@ -11,9 +11,16 @@ function soloNumeros(array) {
   // soloNumeros([1, 'Henry', 2]) debe retornar [1, 2]
 
   // Tu código aca:
-  var a = 1;
-
+  var arrSol =[];
+  for(var i=0; i<array.length; i++){
+    if(array[i]/array[i] == 1 ){
+      arrSol.push(array[i]);
+    }
+    }
+    console.log(arrSol);
+    return arrSol;
 }
+//soloNumeros([1, 'Henry', 2]);
 
 // No modifiques nada debajo de esta linea //
 

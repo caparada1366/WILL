@@ -13,9 +13,21 @@ function numeroSimetrico(num) {
   // numeroSimetrico(11711) devuelve true
 
   // Tu código:
+  var respuesta; 
+  var numLetra = num.toString();
+  var arrNum = numLetra.split('');
+  var alrNum = [];
+  for(var i=0; i<arrNum.length;i++){
+    alrNum.unshift(arrNum[i]);
+  }
+  var alrPal = alrNum.join('');
+  if(alrPal === numLetra) respuesta = true;
+  else respuesta = false;
 
+  console.log(respuesta);
+  return respuesta;
 }
-
+//numeroSimetrico(121);
 // No modifiques nada debajo de esta linea //
 
 module.exports = numeroSimetrico
